@@ -25,7 +25,11 @@ Run `shell_profile` for help.
 
 ## Install
 
-`make install`
+```shell
+git clone https://github.com/oaahmad/shell-profile.git
+cd shell-profile
+make install
+```
 
 ## Contribute
 
