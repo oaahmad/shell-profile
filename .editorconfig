@@ -1,0 +1,31 @@
+# Note: This file may be regenerated (modify "src/config/" instead)
+
+# See https://editorconfig.org
+
+root = true
+
+[*]
+indent_style = tab
+indent_size = tab
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = false
+
+# Batch and PowerShell scripts
+[*.{bat,cmd,ps1}]
+end_of_line = crlf
+
+# YAML
+[*.{yaml,yml}]
+indent_style = space
+indent_size = 2
+
+# Ignore
+[.gitmodules]
+indent_style = unset
+indent_size = unset
+end_of_line = unset
+charset = unset
+trim_trailing_whitespace = unset
+insert_final_newline = unset
