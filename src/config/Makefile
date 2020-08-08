@@ -1,5 +1,9 @@
 # This is included in the root Makefile (see that file for more commands)
 
+# Install shell-profile
+install:
+	./src/tools/install.sh
+
 # Run all tests
 .PHONY: test
 test: version test-gitignore test-tags

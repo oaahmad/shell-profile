@@ -1,6 +1,6 @@
 # shell-profile
 
-[short description]
+Settings and utilities for my shell profile
 
 <a href="https://github.com/oaahmad/shell-profile/actions" title="Click to see actions">
 	<img src="https://github.com/oaahmad/shell-profile/workflows/test/badge.svg" alt="Displays the status of tests">
@@ -12,43 +12,20 @@
 	<img src="https://img.shields.io/badge/versioning-semver-blue" alt="Displays the versioning standard used">
 </a>
 
-[About](#about) | [Install](#install) | [Docs](#docs) | [Contribute](#contribute)
+[About](#about) | [Install](#install) | [Contribute](#contribute)
 
 ## About
 
-[what this project is/does, what it is for, basic usage, examples, screenshots, animations, etc.]
+I use this to sync my shell setup/profile. This includes:
+* Settings for my bash profile
+* Utility scripts
+* Scripts to install software
+
+Run `shell_profile` for help.
 
 ## Install
 
-### Requirements
-
-Linux:
-* [requirement] or [requirement]
-* [requirement]
-
-macOS:
-* [requirement] or [requirement]
-* [requirement]
-
-Windows:
-* [requirement] or [requirement]
-* [requirement]
-
-### Installation Instructions
-
-#### Via [method] [OR] Linux [OR] Linux (Via [method])
-
-1. [instruction]
-
-[details]
-
-2. [instruction]
-
-[details]
-
-## Docs
-
-See [link to documentation] for documentation.
+`make install`
 
 ## Contribute
 
