@@ -1,0 +1,3 @@
+[submodule "src/tools/git-tools"]
+	path = src/tools/git-tools
+	url = https://github.com/oaahmad/.github
