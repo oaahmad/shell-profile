@@ -5,12 +5,12 @@ if ! [[ $(xcode-select -p 1>/dev/null;echo $?) == '0' ]]; then
 	xcode-select --install
 fi
 
-# https://brew.sh/index.html
+# Install Homebrew (https://brew.sh/index.html)
 if ! [ -x "$(command -v brew)" ]; then
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# https://github.com/moretension/duti
+# Install duti (https://github.com/moretension/duti)
 if ! [ -x "$(command -v duti)" ]; then
 	brew install duti
 fi
@@ -23,7 +23,7 @@ elif git --version 2>&1 | grep -q '(Apple'; then
 	brew install git
 fi
 
-# Install git lfs (Git Large File Storage) if not installed
+# Install git lfs (Git Large File Storage)
 if ! ( git lfs &>/dev/null ); then
 	brew install git-lfs
 fi

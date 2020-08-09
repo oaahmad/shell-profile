@@ -7,7 +7,7 @@ if ! [ -x "$(command -v git)" ]; then
 	apt install git
 fi
 
-# Install git lfs (Git Large File Storage) if not installed
+# Install git lfs (Git Large File Storage)
 if ! ( git lfs &>/dev/null ); then
 	apt install git-lfs
 fi
