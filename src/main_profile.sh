@@ -22,6 +22,30 @@ shell_profile(){
 	echo '    remove_git_profile <code>         Delete a git-config profile'
 	echo '    git_profiles                      Print all git-config profiles'
 	echo '    git_profile <code>                Set git-config profile (omit code to print)'
+	echo ''
+
+	# Print script names
+	for file in "$SHELL_PROFILE_PATH/src/all/scripts/"*.sh; do
+		[ -e "$file" ] || continue
+		first_line=$(head -n1 "$file")
+		echo "    $(basename "$file" | cut -f 1 -d '.')       ${first_line:1}"
+	done
+
+	# If on macOS, print macOS specific script names
+	if [[ "$OSTYPE" == darwin* ]]; then
+		for file in "$SHELL_PROFILE_PATH/src/mac/scripts/"*.sh; do
+			[ -e "$file" ] || continue
+			first_line=$(head -n1 "$file")
+			echo "    $(basename "$file" | cut -f 1 -d '.')       ${first_line:1}"
+		done
+	# Otherwise, print Linux-specific script names
+	else
+		for file in "$SHELL_PROFILE_PATH/src/linux/scripts/"*.sh; do
+			[ -e "$file" ] || continue
+			first_line=$(head -n1 "$file")
+			echo "    $(basename "$file" | cut -f 1 -d '.')       ${first_line:1}"
+		done
+	fi
 }
 
 # Pull shell_profile changes from remote
