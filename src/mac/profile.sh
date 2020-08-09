@@ -2,4 +2,3 @@
 
 # Make "clear" actually clear instead of adding newlines:
 alias clear="printf '\33c\e[3J'"
-alias code='open "/Applications/Visual Studio Code.app"'
