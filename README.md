@@ -8,9 +8,6 @@ Settings and utilities for my shell profile
 <a href="https://github.com/oaahmad/shell-profile/actions" title="Click to see actions">
 	<img src="https://github.com/oaahmad/shell-profile/workflows/lint/badge.svg" alt="Displays the status of linters">
 </a>
-<a href="https://github.com/oaahmad/.github/blob/master/docs/versioning.md" target="_blank" title="Click to see versioning information">
-	<img src="https://img.shields.io/badge/versioning-semver-blue" alt="Displays the versioning standard used">
-</a>
 
 [About](#about) | [Install](#install) | [Contribute](#contribute)
 
