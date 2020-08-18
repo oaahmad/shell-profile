@@ -62,14 +62,15 @@ DEFAULT_TITLE='path'
 prompt && title
 
 if [ -x "$(command -v code)" ]; then
-	export EDITOR=code --wait
+	export EDITOR=code
 	if [ -x "$(command -v git)" ]; then
+		git config --global core.editor 'code --wait'
 		git config --global diff.tool code
 		git config --global difftool.code.cmd 'code --wait --diff "$LOCAL" "$REMOTE"'
 		git config --global merge.tool code
 		git config --global mergetool.code.cmd 'code --wait "$MERGED"'
 	fi
 elif [ -x "$(command -v nano)" ]; then
-	export EDITOR=nano --mouse
+	export EDITOR=nano
 fi
 export VISUAL=$EDITOR
