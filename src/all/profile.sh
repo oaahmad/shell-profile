@@ -61,5 +61,15 @@ DEFAULT_PROMPT='main ssh - folder'
 DEFAULT_TITLE='path'
 prompt && title
 
-export EDITOR=nano
-export VISUAL=nano
+if [ -x "$(command -v code)" ]; then
+	export EDITOR=code --wait
+	if [ -x "$(command -v git)" ]; then
+		git config --global diff.tool code
+		git config --global difftool.code.cmd 'code --wait --diff "$LOCAL" "$REMOTE"'
+		git config --global merge.tool code
+		git config --global mergetool.code.cmd 'code --wait "$MERGED"'
+	fi
+elif [ -x "$(command -v nano)" ]; then
+	export EDITOR=nano --mouse
+fi
+export VISUAL=$EDITOR
